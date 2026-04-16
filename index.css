@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* -- Colors -- */
+  --primary-1: #996830;
+  --primary-2: #c4a386;
+  --primary-3: #e5d7cb;
+  --white: white;
+  --neutral-1: #2c2c2c;
+
+  /* -- Fonts -- */
+  --ff-serif: "Playfair Display", serif;
+  --ff-sans-serif: "Outfit", sans-serif;
+
+  --f-heading-1: var(--ff-serif) 72px/96px;
+  --f-heading-2: var(--ff-serif) 60px/72px;
+  --f-heading-3: var(--ff-serif) 48px/56px;
+  --f-heading-4: var(--ff-serif) 36px/48px;
+  --f-heading-6: var(--ff-serif) 24px/32px;
+
+  --f-body-1: var(--ff-sans-serif) 18px/32px;
+  --f-body-2: var(--ff-sans-serif) 14px/24px;
+
+  --f-label-1: var(--ff-sans-serif) 14px/24px;
+  --f-label-2: var(--ff-sans-serif) 12px/16px;
+
+  --f-lead: "Lead" 20px/32px;
+  --f-eyebrow: 14px/20px;
+
+  font: var(--body-1);
+}
+
+.container {
+  width: 1216px;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.header__links {
+  margin-left: auto;
+}
+
+.nav-link {
+  text-decoration: none;
+  font: var(--f-label-1);
+  color: var(--neutral-1);
+  padding: 12px 20px;
+}
+
+.button {
+  background-color: var(--primary-1);
+  color: var(--white);
+  border: none;
+  font: var(--f-label-2);
+  text-decoration: none;
+  padding: 12px 20px;
+}
