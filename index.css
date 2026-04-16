@@ -13,6 +13,7 @@
   --primary-3: #e5d7cb;
   --white: white;
   --neutral-1: #2c2c2c;
+  --neutral-2: #565656;
 
   /* -- Fonts -- */
   --ff-serif: "Playfair Display", serif;
@@ -77,13 +78,26 @@
 .hero__container {
   display: block;
   align-items: center;
+  gap: 24px;
+  width: 1216px;
 }
 
 .text__dop {
   font: var(--f-lead);
   color: var(--neutral-2);
   font-size: 20px;
-  width: 720px;
-  height: 64px;
   text-align: center;
+}
+
+.container__d {
+  width: 1440px;
+  padding-top: 128px;
+  padding-bottom: 80px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.img {
+  width: 1440px;
+  height: 640px;
 }
