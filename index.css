@@ -66,3 +66,24 @@
   text-decoration: none;
   padding: 12px 20px;
 }
+
+.text {
+  font: var(--f-heading-1);
+  color: var(--neutral-1);
+  font-size: 72px;
+  text-align: center;
+}
+
+.hero__container {
+  display: block;
+  align-items: center;
+}
+
+.text__dop {
+  font: var(--f-lead);
+  color: var(--neutral-2);
+  font-size: 20px;
+  width: 720px;
+  height: 64px;
+  text-align: center;
+}
