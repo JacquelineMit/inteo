@@ -137,21 +137,22 @@
   gap: 20px;
 }
 
+.metrics-section {
+  padding: 48px 0;
+}
+
 .award-section__items {
   display: flex;
   gap: 64px;
 }
 
-.metrics-container {
-  border-bottom: 1px;
-  border-color: var(--neutral-4);
-  padding: 48px 0;
-}
-
 .metrics-section__items {
   display: flex;
+  justify-content: space-around;
   margin-bottom: 80px;
+  padding-bottom: 48px;
   gap: 32px;
+  border-bottom: 1px solid var(--neutral-4);
 }
 
 .metrics {
@@ -160,10 +161,8 @@
   align-items: center;
 }
 
-.metrics__items {
+.metrics__item {
   display: flex;
-  width: 384px;
-  padding: 0 75.5px;
   align-items: center;
   gap: 16px;
 }
@@ -176,39 +175,11 @@
 .metrics__text {
   font: var(--f-eyebrow);
   color: var(--neutral-2);
-  width: 128px;
+  max-width: 128px;
 }
 
 .services-container {
   padding: 112px;
-}
-
-.services-container__content {
-  margin-bottom: 80px;
-}
-
-.our-services {
-  display: flex;
-  gap: 16px;
-  align-items: center;
-  margin-bottom: 24px;
-}
-
-.our-services__line {
-  width: 64px;
-  height: 1px;
-  background-color: var(--primary-1);
-}
-
-.our-services__text {
-  font: var(--f-eyebrow);
-  color: var(--primary-1);
-}
-
-.services-text {
-  font: var(--f-heading-2);
-  color: var(--neutral-1);
-  width: 750px;
 }
 
 .services-container__wrap {
@@ -217,10 +188,7 @@
 }
 
 .wrap {
-  width: 384px;
-  height: 384px;
-  border: 1px;
-  border-color: var(--primary-3);
+  border: 1px solid var(--primary-3);
   padding: 40px;
 }
 
@@ -236,7 +204,39 @@
 }
 
 .service-img {
-  width: 39.34px;
-  height: 39.62px;
+  width: 40px;
+  height: 40px;
   margin-bottom: 80px;
+}
+
+.section {
+  padding: 100px 0;
+}
+
+.section__content {
+  margin-bottom: 80px;
+}
+
+.section__title {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section__title-line {
+  width: 64px;
+  height: 1px;
+  background-color: var(--primary-1);
+}
+
+.section__title-text {
+  font: var(--f-eyebrow);
+  color: var(--primary-1);
+}
+
+.section__text {
+  font: var(--f-heading-2);
+  color: var(--neutral-1);
+  width: 750px;
 }
