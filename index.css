@@ -14,6 +14,7 @@
   --white: white;
   --neutral-1: #2c2c2c;
   --neutral-2: #565656;
+  --neutral-3: #848484;
   --neutral-4: #d9d9d9;
 
   /* -- Fonts -- */
@@ -339,4 +340,49 @@
 
 .footer-container__info {
   margin: 80px 0;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.connect_right-section__text {
+  font: var(--f-eyebrow);
+  color: var(--neutral-3);
+}
+
+.connect_right-section__line {
+  width: 64px;
+  height: 1px;
+  background-color: var(--neutral-3);
+}
+
+.connect_right-section {
+  display: flex;
+  gap: 24px;
+  margin: 80px 0;
+  align-items: center;
+}
+
+.connect_right-section__t_l {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 24px;
+}
+
+.connect_text {
+  font: var(--body-1);
+  color: var(--neutral-2);
+}
+
+.footer-container__connect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
