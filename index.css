@@ -70,6 +70,10 @@
   padding: 12px 20px;
 }
 
+.button--size--xl {
+  padding: 16px 24px;
+}
+
 .hero__container {
   padding-top: 168px;
   padding-bottom: 80px;
@@ -424,4 +428,57 @@
 
 .social-icon--youtube {
   background-image: url(./img/icon/youtube.svg);
+}
+
+.works-section__container {
+  display: grid;
+  grid-auto-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  grid-template-areas:
+    "title card_2"
+    "card_1 card_2"
+    "card_1 card_3"
+    "button card_3";
+  gap: 80px;
+}
+
+.works-section__item-1 {
+  grid-area: title;
+}
+
+.works-section__item-2 {
+  grid-area: card_1;
+}
+
+.works-section__item-3 {
+  grid-area: card_2;
+}
+
+.works-section__item-4 {
+  grid-area: card_3;
+}
+
+.works-section__item-5 {
+  grid-area: button;
+}
+
+.card {
+}
+
+.card__img {
+  width: 100%;
+  max-height: 426px;
+  object-fit: cover;
+  margin-bottom: 24px;
+}
+
+.card__title {
+  font: var(--f-heading-4);
+  color: var(--neutral-1);
+  margin-bottom: 16px;
+}
+
+.card__text {
+  font: var(--body-1);
+  color: var(--neutral-2);
 }
