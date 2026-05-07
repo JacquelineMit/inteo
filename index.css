@@ -42,6 +42,8 @@
 .container {
   width: 1216px;
   margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .header__container {
@@ -83,7 +85,7 @@
   font: var(--f-heading-1);
   color: var(--neutral-1);
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 0.3em;
 }
 
 .hero__descriptiopn {
@@ -94,10 +96,11 @@
   width: 600px;
 }
 
-.img {
+.hero-img {
   display: block;
   width: 100%;
   height: 640px;
+  object-fit: cover;
 }
 
 .award-section {
@@ -483,4 +486,92 @@
 .card__text {
   font: var(--body-1);
   color: var(--neutral-2);
+}
+
+@media screen and (max-width: 1216px) {
+  :root {
+    --f-heading-1: 54px/80px var(--ff-serif);
+    --f-heading-2: 45px/54px var(--ff-serif);
+    --f-heading-3: 36px/42px var(--ff-serif);
+    --f-heading-4: 28px/36px var(--ff-serif);
+    --f-heading-6: 20px/30px var(--ff-serif);
+
+    --f-body-1: 16px/24px var(--ff-sans-serif);
+    --f-body-2: 14px/20px var(--ff-sans-serif);
+
+    --f-label-1: 14px/20px var(--ff-sans-serif);
+    --f-label-2: 12px/16px var(--ff-sans-serif);
+
+    --f-lead: 16px/24px "Lead";
+    --f-eyebrow: 14px/20px;
+  }
+  .container {
+    width: 720px;
+  }
+  .hero__container {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+  .hero-img {
+    height: 500px;
+  }
+  .award-section__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .metrics-section {
+    padding: 36px 0;
+  }
+  .metrics-section__items {
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+    gap: 24px;
+  }
+  .section {
+    padding: 75px 0;
+  }
+  .about-section__container {
+    grid-template-columns: 1fr;
+  }
+  .section__content {
+    margin-bottom: 60px;
+  }
+  .about-section__imgs {
+    justify-content: center;
+  }
+  .about-section__img {
+    width: 210px;
+    height: 360px;
+  }
+  .about-section__svg {
+    width: 120px;
+    height: 120px;
+  }
+  .services-container__wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .wrap {
+    padding: 30px;
+  }
+  .service-img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 32px;
+  }
+  .works-section__container {
+    grid-auto-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "title" "card_1" "card_2" "card_3" "button";
+    gap: 40px;
+  }
+  .works-section__item-1 {
+    margin-bottom: 10px;
+  }
+  .card__img {
+    max-height: 320px;
+    margin-bottom: 16px;
+  }
 }
