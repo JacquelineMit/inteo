@@ -76,6 +76,10 @@
   padding: 16px 24px;
 }
 
+.header__button {
+  display: none;
+}
+
 .hero__container {
   padding-top: 168px;
   padding-bottom: 80px;
@@ -606,6 +610,10 @@
   }
   .header__links {
     display: none;
+  }
+  .header__button {
+    margin-left: auto;
+    display: block;
   }
   .hero-img {
     height: 250px;
