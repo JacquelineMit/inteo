@@ -119,8 +119,9 @@
 }
 
 .award__img {
-  width: 80px;
-  height: 80px;
+  --size: 80px;
+  width: var(--size);
+  height: var(--size);
 }
 
 .award-section__line {
@@ -140,7 +141,8 @@
 
 .award-section__container {
   display: flex;
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
   align-items: center;
   gap: 20px;
 }
@@ -571,6 +573,9 @@
     max-height: 320px;
     margin-bottom: 16px;
   }
+  .footer-top {
+    margin: 60px 0;
+  }
 }
 
 @media screen and (max-width: 720px) {
@@ -590,31 +595,51 @@
     --f-lead: 8px/12px "Lead";
     --f-eyebrow: 7px/10px;
   }
+
   .container {
     width: 100%;
+    overflow: hidden;
   }
   .hero__container {
     padding-top: 50px;
     padding-bottom: 30px;
   }
+  .header__links {
+    display: none;
+  }
   .hero-img {
     height: 250px;
   }
-  .award-section__items {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 16px;
+  .hero__descriptiopn {
+    max-width: 600px;
+    width: 100%;
   }
+  .award-section__items {
+    gap: 16px;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .award__img {
+    --size: 40px;
+  }
+
+  .award-section__text,
+  .award-section__line {
+    display: none;
+  }
+
   .metrics-section {
     padding: 18px 0;
   }
   .metrics-section__items {
     padding-bottom: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
   }
   .section {
-    padding: 75px 0;
+    padding: 45px 0;
   }
   .about-section__container {
     grid-template-columns: 1fr;
@@ -650,7 +675,7 @@
     grid-auto-columns: 1fr;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "title" "card_1" "card_2" "card_3" "button";
-    gap: 20px;
+    gap: 35px;
   }
   .works-section__item-1 {
     margin-bottom: 10px;
@@ -658,5 +683,24 @@
   .card__img {
     max-height: 160px;
     margin-bottom: 16px;
+  }
+  .footer-top {
+    margin: 40px 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer__address,
+  .right-section__email {
+    margin-bottom: 20px;
+  }
+  .footer-container__connect {
+    flex-direction: column-reverse;
+  }
+  .connect_right-section {
+    margin: 40px 0;
+    flex-direction: column;
+  }
+  .connect_right-section__line {
+    display: none;
   }
 }
