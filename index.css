@@ -637,6 +637,7 @@
     color: #565656;
     border: 0px;
     background-color: white;
+    text-decoration: none;
   }
   .award-section__items {
     gap: 16px;
