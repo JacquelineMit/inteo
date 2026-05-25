@@ -68,6 +68,7 @@
   color: var(--white);
   border: none;
   font: var(--f-label-2);
+  font-size: small;
   text-decoration: none;
   padding: 12px 20px;
 }
@@ -79,7 +80,9 @@
 .header__button {
   display: none;
 }
-
+.header__menu {
+  display: none;
+}
 .hero__container {
   padding-top: 168px;
   padding-bottom: 80px;
@@ -621,6 +624,19 @@
   .hero__descriptiopn {
     max-width: 600px;
     width: 100%;
+  }
+  .header__menu {
+    display: block;
+  }
+  .header-menu__btn {
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu__button {
+    color: #565656;
+    border: 0px;
+    background-color: white;
   }
   .award-section__items {
     gap: 16px;
