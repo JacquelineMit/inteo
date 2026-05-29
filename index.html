@@ -29,23 +29,25 @@
           <img src="./img/brand/Logo_Dark.svg" />
 
           <div class="header__links">
-            <a href="#" class="nav-link"> About </a>
-            <a href="#" class="nav-link"> Services </a>
-            <a href="#" class="nav-link"> Our Work </a>
-            <a href="#" class="button">Contact Us</a>
+            <a href="#About" class="nav-link"> About </a>
+            <a href="#Services" class="nav-link"> Services </a>
+            <a href="#Works" class="nav-link"> Our Work </a>
+            <a href="#Contact" class="button">Contact Us</a>
           </div>
-          <div class="header__menu">
-            <button id="Header__Button" class="button header__button">Menu</button>
-            <div id="Menu" class="header-menu__btn">
-              <a href="#" class="menu__button">About</a>
-              <a href="#" class="menu__button">Services</a>
-              <a href="#" class="menu__button">Our Work</a>
-              <a href="#" class="menu__button">Contact Us</a>
-            </div>
-          </div>
+          <button id="Header__Button" class="button header__button">Menu</button>
         </div>
       </div>
     </header>
+
+  <div id="Menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__list">
+      <a href="#About" class="mobile-menu__button">About</a>
+      <a href="#Services" class="mobile-menu__button">Services</a>
+      <a href="#Works" class="mobile-menu__button">Our Work</a>
+      <a href="#Contact" class="mobile-menu__button">Contact Us</a>
+      <button id="Button__menu" class="button">Закрыть меню</button>
+    </div>
+  </div>
 
     <!-- Main -->
     <main>
@@ -103,7 +105,7 @@
         </div>
       </section>
 
-      <section class="about-section section">
+      <section id="About" class="about-section section">
         <div class="container about-section__container">
           <div class="section__content">
             <div class="section__title">
@@ -165,7 +167,7 @@
         </div>
       </section>
 
-      <section class="section services-container">
+      <section id="Services" class="section services-container">
         <div class="container">
           <div class="section__content">
             <div class="section__title">
@@ -210,7 +212,7 @@
         </div>
       </section>
 
-      <section class="section works-section">
+      <section id="Works" class="section works-section">
         <div class="container works-section__container">
           <div class="section__content works-section__item-1">
             <div class="section__title">
@@ -248,7 +250,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer id="Contact" class="footer">
       <div class="container">
         <div class="footer-container__divider"></div>
 
